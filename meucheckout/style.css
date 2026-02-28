@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    /*gambiarra a seguir*/
+    margin-top: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.top-text{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    justify-content: center;
+}
+
+.top-guarana{
+    height: 100px;
+    background-color: green;
+    border-radius: 15px 15px 0 0;
+    border: 2px black solid;
+}
+
+.top-coca{
+    height: 100px;
+    background-color: red;
+    border-radius: 15px 15px 0 0;
+    border: 2px black solid;
+}
+
+.top-pepsi{
+    height: 100px;
+    background-color: blue;
+    border-radius: 15px 15px 0 0;
+    border: 2px black solid;
+}
+
+.bottom-checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 15px 15px;
+    border: 2px black solid;
+    border-top: none;
+    padding: 10px;
+}
+
+.price{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    margin-top: 100px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: poppins;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.btn-guarana{
+    background-color: green;
+}
+
+.btn-coca{
+    background-color: red;
+}
+
+.btn-pepsi{
+    background-color: blue;
+}
+
+/* 
+.features{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    list-style: none;
+    text-align: justify;
+    padding: 10px;
+}
+*/
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+@media (max-width: 670px) {
+
+    .main-container{
+        gap: 20px;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
+
+@media (min-width: 671px) and (max-width: 900px){
+
+    .main-container{
+        gap: 40px;
+    }
+
+    .card{
+        width: 70%;
+    }
+}
